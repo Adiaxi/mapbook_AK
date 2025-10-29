@@ -1,9 +1,8 @@
-zmienna_1:str= 'Adrian'
-zmienna_2:str= 'Michasia'
-zmienna_3:str= 'Kasia'
-zmienna_4:str= 'Asia'
-#przerob istniejacy kod w taki sposob aby zdefiniowani uzytkownicy
-uzytkownicy:list=[zmienna_1, zmienna_2, zmienna_3, zmienna_4]
+users: list = [
+    {'name': 'Adrian', 'location': 'Wieluń', 'post': 4},
+    {'name': 'Patrycja', 'location': 'Warszawa', 'post': 26},
+    {'name': 'Andrzej', 'location': 'Toruń', 'post': 100},
+]
 
-for uzytkownik in uzytkownicy:
-    print(f'Hello {uzytkownik}')
+for user in users:
+    print(f'Twój znajomy {user['name']} w miejscowości {user['location']} opublikował {user["post"]} postów.')
