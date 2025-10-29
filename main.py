@@ -1,7 +1,7 @@
 users: list = [
     {'name': 'Adrian', 'location': 'Wieluń', 'post': 4},
     {'name': 'Patrycja', 'location': 'Warszawa', 'post': 26},
-    {'name': 'Andrzej', 'location': 'Toruń', 'post': 100},
+    {'name': 'Kasia', 'location': 'Lublin', 'post': 12},
 ]
 
 
@@ -15,6 +15,13 @@ def add_user(users_data)->None:
     post:int=int(input('Podaj liczbę postów: '))
     users_data.append({'name': name, 'location': location, 'post': post})
 
+def remove_user(users_data: list)->None:
+    temp_name:str= input('Podaj imię użytkownika do usunięcia z listy znajomych: ')
+    for user in users_data:
+        if user['name'] == temp_name:
+            users.remove(user)
+
+
 while True:
     temp_choice: int = int(input('Wybierz opcję menu: '))
     if temp_choice == 0:
@@ -27,5 +34,6 @@ while True:
         add_user(users)
     if temp_choice == 3:
         print('Wybrano funkcję usuwania znajomych')
+        remove_user(users)
     if temp_choice == 4:
         print('Wybrano funkcję aktualizacji danych znajomego')
