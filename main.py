@@ -80,22 +80,22 @@ button_dodaj_obiekt.grid(row=5, column=0, columnspan=2)
 label_szczegoly_obiektu = Label(ramka_szczegoly_obiektu, text='Szczegoly obiektu')
 label_szczegoly_obiektu.grid(row=6, column=0, sticky=W)
 
-label_imie_szczegoly_obiektu = Label(ramka_mapa, text='Imie: ')
+label_imie_szczegoly_obiektu = Label(ramka_szczegoly_obiektu, text='Imie: ')
 label_imie_szczegoly_obiektu.grid(row=1, column=0)
 
-label_imie_szczegoly_obiektu_wartosc=Label(ramka_mapa, text='....')
+label_imie_szczegoly_obiektu_wartosc=Label(ramka_szczegoly_obiektu, text='....')
 label_imie_szczegoly_obiektu_wartosc.grid(row=1, column=1)
 
 label_lokalizacja_szczegoly_obiektu=Label(ramka_szczegoly_obiektu, text='Lokalizacja: ')
 label_lokalizacja_szczegoly_obiektu.grid(row=1, column=2)
 
-label_lokalizacja_szczegoly_obiektu_wartosc=Label(ramka_mapa, text='....')
+label_lokalizacja_szczegoly_obiektu_wartosc=Label(ramka_szczegoly_obiektu, text='....')
 label_lokalizacja_szczegoly_obiektu_wartosc.grid(row=1, column=3)
 
 label_posty_szczegoly_obiektu=Label(ramka_szczegoly_obiektu, text='Posty: ')
 label_posty_szczegoly_obiektu.grid(row=1, column=4)
 
-label_posty_szczegoly_obiektu_wartosc=Label(ramka_mapa, text='....')
+label_posty_szczegoly_obiektu_wartosc=Label(ramka_szczegoly_obiektu, text='....')
 label_posty_szczegoly_obiektu_wartosc.grid(row=1, column=5)
 
 
